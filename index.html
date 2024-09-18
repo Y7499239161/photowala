@@ -1,0 +1,670 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PHOTOWALA</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="Gallery" href="gallery.html">
+  <style>
+    .img:hover {
+      height: 230px;
+      width: 260px;
+    }
+
+    #map {
+      height: 400px;
+      width: 100%;
+      border: 1px solid black;
+    }
+    
+
+    .team.card-body i{
+      font-size: 20px;
+      display: flex;
+      margin: 200px;
+     
+      
+    }
+    #table {
+      top: 200px;
+      margin: 200px;
+      
+      
+    }
+    #about {
+      background-image: url(camera6.jpeg);
+      background-size: cover;
+      background-position: center; /* Centers the background image */
+      background-repeat: no-repeat; 
+      height: 100vh; /* Full viewport height */
+      color: rgb(231, 220, 220);
+      padding: 200px; 
+    
+    }
+    .team  {
+      background-color: white;
+      background-size: cover;
+      background-position: center; /* Centers the background image */
+      background-repeat: no-repeat; 
+      height: 30vh; /* Full viewport height */
+      padding-left: 10px;
+      color: rgb(41, 8, 8);
+    }
+   
+    #gallery  {
+      background-color: #68a2e4;
+      
+    }
+    .card-body {
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+      position: relative;
+      overflow: hidden;
+      transition: all 0.3s ease-in-out;
+    }
+    #teamCarousel {
+      position: relative;
+      max-width: 40%;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+    .carousel-inner img {
+      height: 500px;
+      object-fit: cover;
+      transition: transform 0.5s ease, filter 0.5s ease;
+    }
+    .carousel-item {
+      position: relative;
+    }
+    .carousel-item img:hover {
+      transform: scale(1.05);
+      filter: brightness(60%);
+    }
+    .carousel-caption {
+      bottom: 10px;
+      left: 20px;
+      right: 20px;
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 8px;
+      padding: 5px;
+      text-align: left;
+    }
+    .carousel-caption h5 {
+      font-size: 20px;
+      color: #fff;
+    }
+    .carousel-caption p {
+      font-size: 10px;
+      color: #ddd;
+    }
+    .carousel-control-prev, .carousel-control-next {
+      width: 30%;
+      height: 30%;
+      top: 0;
+      bottom: 1;
+      background: rgba(0, 0, 0, 0.5);
+    }
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+      background-color: #0072ff;
+      height: 40px;
+      width: 40px;
+      background-size: 50%;
+    }
+    #services {
+          height: 100px;
+    }
+            
+    
+    
+    
+  
+   
+  
+
+  
+   
+
+     
+
+    
+    
+  
+     
+     
+    
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://www.instagram.com/mr_shubh_patil999?igsh=MTNhcWp3NGR3c2wybA%3D%3D" target="_blank"><span
+          class="text-warning">shubh_patil </span>photographyy_</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">ABOUT</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                GALLERY
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="gallery.html#wedding">Wedding</a></li>
+                <li><a class="dropdown-item" href="gallery.html#pre-wedding">Pre-Wedding</a></li>
+                <li><a class="dropdown-item" href="gallery.html#bride-shoot">Bride Shoot</a></li>
+                <li><a class="dropdown-item" href="gallery.html#baby-shower-shoot">Baby Shower Shoot</a></li>
+                <li><a class="dropdown-item" href="gallery.html#outdoor-shoot">Outdoor Shoot</a></li>
+                <li><a class="dropdown-item" href="gallery.html#model-shoot">Model Shoot</a></li>
+                <li><a class="dropdown-item" href="gallery.html#indoor-shoot">Indoor Shoot</a></li>
+                <li><a class="dropdown-item" href="gallery.html#cinematic-shoot">Cinematic Shoot</a></li>
+            </ul>
+        </li>
+        
+          <li class="nav-item">
+            <a class="nav-link" href="#services">SERVICES</a>
+          </li>
+          <li class="nav-item"></li>
+          <a class="nav-link" href="#team">TEAM</a>
+          </li>
+          <li class="nav-item"></li>
+          <a class="nav-link" href="#contact">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </div>
+  </nav>
+
+  <section>
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="shubhpatil.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="ca.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="w1.jpeg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  
+
+ 
+
+  <!-- Srvices section start -->
+  <table  id="table">
+   
+    <tr>
+      <div class=" text-center" id="services" style="background-color: #ccecef;" >
+        <h2 style="font-family:fantasy"><h1>Our Services..</h1></div>
+          <marquee><b>
+            "Capturing Life’s Finest Moments: Professional Photography Services Tailored to Your Vision"</marquee></b>
+
+      <td style="padding:45px" >
+        <div class="card" style="width: 18rem;">
+          <img class="img" src="w.jpeg" class="card-img-top" alt="..." height="250px">
+          <div class="card-body">
+            <h5 class="card-title">Wedding</h5>
+            <p class="card-text">Captured in every frame is not just our day, but the beginning of forever—two souls,
+              one love, and a lifetime of shared dreams.</p>
+            <a href="gallery.html#wedding" class="btn btn-primary">Explore</a>
+          </div>
+        </div>
+      </td>
+      <td style="padding:45px">
+        <div class="card" style="width: 18rem;">
+          <img class="img" src="pre.jpg" class="card-img-top" alt="..." height="250px">
+          <div class="card-body">
+            <h5 class="card-title"> Pre-Wedding</h5>
+            <p class="card-text">"Every love story is beautiful, but ours is my favorite—two hearts, one journey, and a
+              lifetime of happiness waiting ahead."</p>
+            <a href="gallery.html#pre-wedding" class="btn btn-primary">Explore</a>
+          </div>
+        </div>
+      </td>
+      <td style="padding:45px">
+        <div class="card" style="width: 18rem;">
+          <img class="img" src="bridal.jpg" class="card-img-top" alt="..." height="250px">
+          <div class="card-body">
+            <h5 class="card-title">Bride shoot</h5>
+            <p class="card-text">"In her eyes, the dreams of forever; in her smile, the joy of a lifetime. A bride,
+              radiating love her new chapter."</p>
+            <a href="gallery.html#bride-shoot" class="btn btn-primary">Explore</a>
+          </div>
+        </div>
+      </td>
+      <td style="padding:45px">
+        <div class="card" style="width: 18rem;">
+          <img class="img" src="indoor.jpeg" class="card-img-top" alt="..." height="240px">
+          <div class="card-body">
+            <h5 class="card-title">Baby shower shoot</h5>
+            <p class="card-text">
+              A baby shower shoot celebrates the joy and anticipation of new life, capturing tender moments and the
+              excitement of expecting parents.</p>
+            <a href="gallery.html#baby-shower-shoot" class="btn btn-primary">Explore</a>
+          </div>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding:45px">
+        <div class="card" style="width: 18rem;">
+          <img class="img" src="outdoor.jpeg" class="card-img-top" alt="..." height="240px">
+          <div class="card-body">
+            <h5 class="card-title"> Outdoor shoot</h5>
+            <p class="card-text">
+              An outdoor shoot captures moments in natural light and scenic environments, adding authenticity and
+              vibrancy to the photos. </p>
+            <a href="gallery.html#outdoor-shoot" class="btn btn-primary">Explore</a>
+          </div>
+        </div>
+      </td>
+      <td style="padding:45px">
+        <div class="card" style="width: 18rem;">
+          <img class="img" src="model.jpeg" class="card-img-top" alt="..." height="240px">
+          <div class="card-body">
+            <h5 class="card-title">Model shoot</h5>
+            <p class="card-text">
+              A model shoot focuses on showcasing style, personality, and expression through posed photography, often
+              for fashion or portfolio purposes</p>
+            <a href="gallery.html#model-shoot" class="btn btn-primary">Explore</a>
+          </div>
+        </div>
+      </td>
+      <td style="padding:45px">
+        <div class="card" style="width: 18rem;">
+          <img class="img" src="y.jpg" class="card-img-top" alt="..." height="240px">
+          <div class="card-body">
+            <h5 class="card-title">Indoor shoot</h5>
+            <p class="card-text">
+              "Within these walls, love finds its quiet moments—capturing the warmth of togetherness and the beauty of
+              intimate, timeless memories."</p>
+            <a href="gallery.html#indoor-shoot" class="btn btn-primary">Explore</a>
+          </div>
+        </div>
+      </td>
+      <td style="padding:45px">
+        <div class="card" style="width: 18rem;">
+          <img class="img" src="cinamatic.jpeg" class="card-img-top" alt="..." height="240px">
+          <div class="card-body">
+            <h5 class="card-title">Cinamatic shoot</h5>
+            <p class="card-text">
+              A cinematic shoot transforms moments into visually stunning, film-like sequences, capturing emotions with
+              dramatic lighting and storytelling.</p>
+            <a  href="gallery.html#cinematic-shoot" class="btn btn-primary">Explore</a>
+          </div>
+        </div>
+      </td>
+    </tr>
+ 
+  </table>
+
+  <!-- table  start photography services -->
+  <div class="container my-5">
+    <h2 class="text-center mb-5">Our Photography Services</h2>
+    <table class="table table-striped table-hover table-bordered">
+      <thead class="table-dark">
+        <tr>
+          <th scope="col">Service</th>
+          <th scope="col">Description</th>
+          <th scope="col">Package Options</th>
+          <th scope="col">Duration</th>
+          <th scope="col">Price Range</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Wedding Photography</td>
+          <td>Capture the magic of your special day with candid & posed shots.</td>
+          <td>Basic, Premium, Deluxe</td>
+          <td>Full day coverage</td>
+          <td>₹20,000 - ₹1,00,000+</td>
+        </tr>
+        <tr>
+          <td>Pre-Wedding Shoots</td>
+          <td>Romantic, creative photoshoots before the big day.</td>
+          <td>Location-based, Themed</td>
+          <td>2-4 hours</td>
+          <td>₹10,000 - ₹50,000</td>
+        </tr>
+        <tr>
+          <td>Event Photography</td>
+          <td>Professional coverage for birthdays, corporate events, etc.</td>
+          <td>Half-day, Full-day</td>
+          <td>4-8 hours</td>
+          <td>₹15,000 - ₹75,000</td>
+        </tr>
+        <tr>
+          <td>Portrait Photography</td>
+          <td>Personal and family portraits with customized themes.</td>
+          <td>Standard, Professional</td>
+          <td>1-3 hours</td>
+          <td>₹5,000 - ₹30,000</td>
+        </tr>
+        <tr>
+          <td>Product Photography</td>
+          <td>High-quality images for e-commerce, catalogs, and ads.</td>
+          <td>Per product, Bulk packages</td>
+          <td>Per project</td>
+          <td>₹5,000 - ₹50,000</td>
+        </tr>
+        <tr>
+          <td>Fashion Photography</td>
+          <td>Glamorous shoots for portfolios, fashion shows, and brands.</td>
+          <td>Look-based, Portfolio</td>
+          <td>2-6 hours</td>
+          <td>₹15,000 - ₹1,00,000+</td>
+        </tr>
+        <tr>
+          <td>Newborn & Maternity Shoots</td>
+          <td>Cherish the early moments of motherhood and newborns.</td>
+          <td>Themed, Natural</td>
+          <td>2-4 hours</td>
+          <td>₹8,000 - ₹35,000</td>
+        </tr>
+        <tr>
+          <td>Candid Photography</td>
+          <td>Spontaneous, unposed shots that capture natural moments.</td>
+          <td>Event-based, Lifestyle</td>
+          <td>3-6 hours</td>
+          <td>₹10,000 - ₹40,000</td>
+        </tr>
+        <tr>
+          <td>Drone Photography</td>
+          <td>Aerial shots for weddings, real estate, and more.</td>
+          <td>Single location, Multi-location</td>
+          <td>Per project</td>
+          <td>₹15,000 - ₹60,000</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+   <!-- table end photography services -->
+
+
+
+  
+  <!-- Srvices section end -->
+   
+  <!-- accordion start -->
+  <div class="accordion" id="accordionPanelsStayOpenExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+          <strong>Let me turn your moments into art, one click at a time. 📸✨</strong> 
+
+               <i>shubh_patil photographyy_</i>
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+        <div class="accordion-body">
+          <strong><strong>Concept:</strong>
+            Capture a series of portraits or still-life scenes where each photo tells a piece of a larger story. Viewers can use their phones or AR devices to scan the image, and when they do, an augmented reality layer appears, adding motion, sound, or digital effects to the still photo. This blending of static imagery and digital augmentation creates a multi-dimensional experience.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+          Interactive Exploration:
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          <strong>The viewer becomes part of the process.</strong> They can explore the image at their own pace, discovering new layers, clues, or parts of the story hidden in each frame. This adds a gamified aspect to photography.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+          Collaboration with Artists/Designers:
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          <strong>Work with AR designers and motion graphic artists to create the effects that will be layered over the photos. This collaboration allows for a combination of skills, merging traditional photography with cutting-edge digital techniques.
+        </div>
+      </div>
+    </div>
+  </div>
+   <!-- accordian end -->
+
+
+<!-- about section -->
+   <section id="about" class="about section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-12 col-12">
+          <div class="about-img">
+            <img src="o4.jpg" alt="" class="img-fluid">
+          </div>
+
+        </div>
+        <div class="col-lg-8 col-md-12 ps-lg-5 mt-md-5">
+          <div class="about-text">
+            <h2>" Shubham Patil: Professional Photographer Capturing Life’s Moments"</h2>  
+                <p><em>At 23, I, Shubham Patil, weave stories through my lens, capturing the essence of life’s most cherished moments. From the joyous celebrations of weddings and baby showers to the serene beauty of nature and the elegance of models, my work spans a diverse range of settings, both indoor and outdoor.
+                <br>    My keen eye for detail and passion for photography allow me to create timeless images that   speak to the heart. 
+                   Whether it’s the intimate moments of a pre-wedding shoot or the grandeur of a marriage ceremony, I strive to encapsulate the emotions and beauty of each event.<br> My skills in lighting, composition, and editing ensure that every photograph is a masterpiece, reflecting the unique essence of the subject.
+                  
+                  In every frame, I aim to capture not just a picture, but a memory, a feeling, a story. Let me turn your moments into art, one click at a time. 📸✨</em>
+                  </p>
+                  <a  href="https://www.instagram.com/mr_shubh_patil999?igsh=MTNhcWp3NGR3c2wybA%3D%3D" ><span style="text-decoration:none;color:gold;">shubh_patil </span>photographyy_</a>
+                  
+                  <div  class="mail" style="margin: 10px 0; text-align: center;"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                  </svg>  <a href="mailto:yp856613@gmail.com"><span >E-mail </span>
+                      <i class="fas fa-envelope" style="font-size: 24px; color: #452ec7;"></i>| 7499239161</a>
+
+                    <div style="margin: 10px 0; text-align: center;">   <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                      <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                    </svg>     <a href="http://www.linkedin.com/in/yogesh-patil-523486251"><span >linkedin</span></a></div>
+                    <div style="margin: 10px 0; text-align: center;">  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                      <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                    </svg>  <a href="https://www.instagram.com/mr_shubh_patil999?igsh=MTNhcWp3NGR3c2wybA%3D%3D"><span >Instagram</span></a></div>
+                    <i class="fas fa-envelope" style="font-size: 24px; color: #e30f48;"></i></a></div>
+                    <p>
+                      
+                      <img src="ca.jpg"   alt="" width="150px">
+                      <img src="shubhpatil.png" alt="" >
+                      <img src="ca.jpg"   alt="" width="150px"><i> <h2 style="color: rgb(207, 69, 207);">Your Dream Photography....smile plz    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-emoji-smile" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                        <path d="M4.285 9.567a.5.5 0 0 1 .683.183A3.5 3.5 0 0 0 8 11.5a3.5 3.5 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.5 4.5 0 0 1 8 12.5a4.5 4.5 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683M7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5m4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5"/>
+                      </svg>
+                      
+                     
+                    </p>
+                  
+
+                  
+          </div>
+        </div>
+      </div>
+    </div>
+
+   </section>
+ <!-- about end -->
+                   
+
+
+
+
+
+  <!-- contact start -->
+  <div class="container" id="contact">
+    <div class="row">
+          <div class="col-md-6 offset-md-3">
+              <h1 id="contact">Contact us</h1>
+              <form >
+                  <div class="form-group">
+                      <label for="name">Name</label>
+                      <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                  </div>
+                  <div class="form-group">
+                      <label for="email">Email</label>
+                      <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                  </div>
+                  <div class="form-group">
+                      <label for="message">Message</label>
+                      <textarea class="form-control" id="message" rows="3"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Send</button>
+                  
+              </form>
+          </div>
+      </div>
+      <div>
+    <div class="row">
+      <div class="col-md-12">
+      <h2>Our Location  </h2><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+        <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+      </svg>
+        <div id="map"><iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29749.45849801863!2d75.28358262357153!3d21.244442698920523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd8df075466c2eb%3A0x44fdf928d75d1df0!2sChopda%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1726345369297!5m2!1sen!2sin"
+            width="1290px" height="395" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+  <!-- contact end -->
+
+
+  <!-- team start -->
+
+  
+ 
+  <section class="team">
+    <div class="container">
+      <div class="section-header text-center pb-5">
+        <h2 id="team">Our Team...</h2>
+        <p><i>"Through our lens, we capture the essence of your love story<br>turning fleeting moments into timeless memories. Your special day, framed with passion and artistry."</i></p>
+        <b>Meet the Team:</b><br>
+        Shubham Patil – A master in capturing the perfect moment with a deep passion for visual storytelling.<br>
+        Sam Patil – Bringing an artistic flair to every shot, Sam specializes in innovative compositions and lighting techniques.<br>
+        Jayesh Saner – Known for his keen eye for detail, Jayesh ensures that every shot is technically flawless and aesthetically beautiful.
+        <div class="contact-info text-center">
+          Contact Information:<br>
+          <span>7499239161</span>|
+          <span>9921749717</span>|
+          <span>9766523597</span>
+        </div>
+      </div>
+  
+      <div id="teamCarousel" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="y.jpg" class="d-block w-30" alt="Shubh Patil">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Shubh Patil</h5>
+              <p>I am a professional photographer<br>"Through my lens, I capture not just images, but stories—moments frozen in time."</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="sam patil.jpg" class="d-block w-30" alt="Sam Patil">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Sam Patil</h5>
+              <p>"Chasing light, capturing love, and freezing moments in time—where every click tells a story that lasts forever."</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="jayesh.jpg" class="d-block w-30" alt="Jayesh Saner">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Jayesh Saner</h5>
+              <p>"Photography isn't just our craft—it's how we tell the story of life, one shot at a time."</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#teamCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#teamCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    
+  <!-- team end -->
+
+  
+  <!-- footer start -->
+  <div class="footer" style="background-color: rgb(113, 194, 194);  position:bottom; width: 100%; bottom: 0;">
+    <div class="" style="margin:5px  0; text-align:center; bottom:0%">We provide the best services to our customers
+
+
+    <a href="#home" style="color: #167ef6; text-decoration: none; margin: 0 10px;">Home</a>
+    <a href="#services" style="color: #0678fa; text-decoration: none; margin: 0 10px;">Services</a>
+    <a href="#contact" style="color: #0768d7; text-decoration: none; margin: 0 10px;">Contact</a></div><hr>
+    
+
+    
+     
+    <div  class="mail" style="margin: 10px 0; text-align: center;"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+      <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+    </svg>  <a href="mailto:yp856613@gmail.com"><span >E-mail </span>
+        <i class="fas fa-envelope" style="font-size: 24px; color: #452ec7;"></i>| 7499239161</a>
+        <div style="margin: 10px 0; text-align: center;">   <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+          <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+        </svg>     <a href="http://www.linkedin.com/in/yogesh-patil-523486251"><span >linkedin</span></a></div>
+    
+        <div style="margin: 10px 0; text-align: center;">  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+          <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+        </svg>  <a href="https://www.instagram.com/mr_shubh_patil999?igsh=MTNhcWp3NGR3c2wybA%3D%3D"><span >Instagram</span></a></div>
+        <i class="fas fa-envelope" style="font-size: 24px; color: #e30f48;"></i></a></div>
+        
+      <div style="margin: 10px 0; text-align: center;">&copy; 2024 Your Website. All rights reserved.</div>
+     
+  </div>
+   </div>
+   <!-- footer end -->
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
